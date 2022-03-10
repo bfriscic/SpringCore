@@ -20,7 +20,9 @@
 	<!-- Define the dependency -->
 	<bean id="myFortuneService" class="com.bfriscic.springdemo.HappyFortuneService"></bean>
 
-	<bean id="myCoach" class=" com.bfriscic.springdemo.TrackCoach">
+	<bean id="myCoach" 
+	class=" com.bfriscic.springdemo.TrackCoach"
+	scope="prototype">
 
 		<!-- set up constructor injection-->
 		<constructor-arg ref="myFortuneService" />
